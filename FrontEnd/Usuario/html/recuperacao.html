@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/recuperacao.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="../imagens/Untitled-2.png" alt="">
+            </div>
+        </div>
+      
+        <br><br><br><br><br><div class="line"></div><br>
+    </header>
+     <main>
+        <div class="recuperar">
+         <br><br><h1 class="fala">Recuperação de Senha</h1>
+         <form action="">
+            
+             <label for="email">Email</label><br>
+             <input type="email" name="email" id="email" required><br><br><br>
+             
+               <button type="submit" onclick="mensagem()">Enviar</button> 
+         </form>
+         
+        </div> 
+          
+ 
+     </main>
+     <script>
+        function mensagem(){
+            alert("Alteração Salva")
+             window.location.href = "../html/login.html"
+        }
+       
+     </script>
+</body>
+</html>

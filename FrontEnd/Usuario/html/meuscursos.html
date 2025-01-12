@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/meuscursos.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <title>Inscrição de Cursos</title>
+    
+</head>
+
+
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="../imagens/Untitled-2.png" alt="">
+            </div>
+        </div>
+        <button class="btn-barras" onclick="toggleMenu()">☰</button>
+        <br><br><br><br><br><div class="line"></div><br>
+    </header>
+      <!-- Menu -->
+      <div class="menu" id="menu">
+        <nav>
+            <a href="perfil.html">Perfil</a>
+            <a href="meuscursos.html">Meus Cursos</a>
+            <a href="mensagens.html">Mensagens</a>
+            <a href="login.html">Sair</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- Primeiro caso: Estudante com matrícula -->
+        <div id="matriculaConcluida" class="box hidden">
+            <h2>Cursos Inscritos</h2>
+            <p id="cursoDetalhes"></p>
+            <button onclick="novaInscricao()">Nova Inscrição</button>
+        </div>
+
+        <!-- Segundo caso: Estudante sem matrícula -->
+        <div id="semMatricula" class="box hidden">
+            <h2>Cursos Inscritos</h2>
+            <p>Ainda não se matriculou em nenhum Curso 😟</p>
+            <button onclick="novaInscricao()">Nova Inscrição</button>
+        </div>
+
+        <!-- Formulário de nova inscrição -->
+        <div id="formNovaInscricao" class="box hidden">
+            <h2>Nova Inscrição</h2>
+            <label for="curso">Selecione os Cursos</label>
+            <select id="curso" onchange="calcularTotal()">
+                <option value="" data-preco="0">Selecione um curso</option>
+                <option value="Design Gráfico" data-preco="15000">Design Gráfico - 15000kz</option>
+                <option value="UI/UX Design" data-preco="15000">UI/UX Design - 15000kz</option>
+                <option value="Programação Web" data-preco="25000">Programação Web - 25000kz</option>
+                <option value="Lógica de Programação" data-preco="20000">Lógica de Programação - 20000kz</option>
+            </select>
+            <br><br>
+            <label>Total a Pagar</label>
+            <input type="text" id="totalPagar" readonly>
+            <br><br>
+            <label for="periodo">Período</label>
+            <select id="periodo">
+                <option value="">Selecione</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+            <br><br>
+            <button onclick="cancelar()">Cancelar</button>
+            <button onclick="confirmar()"><a href="pagamentos.html">Confirmar</a></button>
+        </div>
+    </div>
+
+    <script src="../javascript/cursos.js">
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens e Fale Connosco</title>
+    <link rel="stylesheet" href="../css/mensagens.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <div class="logo">
+                <img src="../imagens/Untitled-2.png" alt="">
+            </div>
+        </div>
+        <button class="btn-barras" onclick="toggleMenu()">☰</button>
+        <br><br><br><br><br><div class="line"></div><br>
+        <div class="menu" id="menu">
+            <nav>
+                <a href="perfil.html">Perfil</a>
+                <a href="meuscursos.html">Meus Cursos</a>
+                <a href="mensagens.html">Mensagens</a>
+                <a href="login.html">Sair</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+   
+    <!-- Menu -->
+    <br>
+    <div id="mensagensContainer">
+        <h2>Mensagens</h2>
+        <!-- Mensagens serão exibidas aqui -->
+        <div class="pendente">
+            Pendente: A sua matrícula para o curso de "Matemática" está em progresso. Após confirmarmos o pagamento, iremos atualizar o estado da matrícula.
+        </div>
+        <div class="concluido">
+            Concluído: A sua matrícula para o curso de "Física" foi confirmada com sucesso. Bem-vindo(a)!
+        </div>
+        <button id="btnAtualizar">Atualizar</button>
+    </div>
+    
+    <h2>Fale Connosco</h2>
+    <div id="faleConnosco">
+        <textarea id="campoMensagem" placeholder="Digite a sua mensagem..."></textarea>
+        <button id="btnEnviar">Enviar</button>
+    </div>
+</main>
+
+    <script src="../javascript/perfil.js"></script>
+    <script src="../javascript/mensagens.js"></script>
+</body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <header>
+       
+        <div class="cabecalho">
+             <div class="logo">
+                 <img src="../imagens/Untitled-2.png" alt="">
+             </div>
+            
+         </div>
+       
+         <br><br><br><br><br><div class="line"></div><br>
+     </header>
+
+     <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite o nome" required>
+
+            <label for="apelido">Apelido</label>
+            <input type="text" id="apelido" placeholder="Digite o seu Apelido" required>
+
+            <label for="email">Email*</label>
+            <input type="email" id="email" placeholder="exemplo@gmail.com" required>
+
+            <label for="senha">Palavra-Passe*</label>
+            <input type="password" id="senha" placeholder="Não escolhe o nome do seu gato" required minlength="6">
+            <p class="description">A palavra passe deverá ter no mínimo 6 dígitos</p>
+
+            <label for="confirmar-senha">Confirmar Palavra-Passe*</label>
+            <input type="password" id="confirmar-senha" placeholder="Insira a mesma palavra-passe definida" required>
+
+            <div class="button-container">
+                <button type="button" class="cancel"><a href="login.html">Cancelar</a></button>
+                <button type="submit"><a href="indexUsuario.html">Criar</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

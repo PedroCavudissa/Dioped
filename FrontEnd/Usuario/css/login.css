@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+   
+}
+.cabecalho{display: flex;
+    margin:0px;
+    padding: 0px;}
+
+
+/* Logo */
+.logo {
+    position: absolute;
+    left: 2px;
+    top: 5px;
+    display: flex;
+    width: 200px;
+    height: 170px;
+    position: absolute;
+    top: 20px;
+    left: 225px;
+   
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 px;
+    position: absolute;
+    top: 90px;
+    left: 450px;
+    
+}
+
+.menu li {
+    margin: 0 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.menu a:hover {
+    color:#000066;
+}
+
+/* Botão de idioma */
+.language {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    top: 75px;
+    right:80px;
+    
+}
+
+.language-btn {
+    background-color: #002366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.language-btn:hover {
+    background-color: #0047ab;
+}
+
+/* Linha separadora */
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 130px;
+   
+}
+main {
+    padding: 20px;
+}
+main button a{text-decoration: none;
+color: white;}
+.botaoInscricao{background-color: #000066;
+   width: 8%;
+   height: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+body form{position: absolute;
+top: 35%;
+left: 525px;
+width: 30px;}
+body form button{
+    background-color: #000066;
+    width: 100px;
+    height: 40px;
+     transition: 0.3s;
+     color: white;
+     text-decoration: none;
+     border-radius: 5px;
+    position: absolute;
+left: 400%;}
+main  h2{
+    font-size: 16px;
+}
+input{border-top:0px;
+    border-left:0px;
+    border-right:0px;
+   border-bottom: #000066 2px solid;
+width: 350px;}
+label{font-size: 20px;}
+.fala{
+text-align: center;}
+
+.forgoten a{position: absolute;
+top: 400px;
+left: 625px;
+text-decoration: none;}
+.new{position: absolute;
+    top: 530px;
+    left: 605px;
+    text-decoration: none;}

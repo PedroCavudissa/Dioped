@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+    <header>
+       
+        <div class="cabecalho">
+             <div class="logo">
+                 <img src="../imagens/Untitled-2.png" alt="">
+             </div>
+            
+         </div>
+         <button class="btn-barras" onclick="toggleMenu()">☰</button>
+         <br><br><br><br><br><div class="line"></div><br>
+     </header>
+     <main>
+        <h2 class="boasVindas">Olá,Pedro Cavudissa, Seja Bem Vindo</h2><br>
+        
+        <div class="carousel">
+            <img src="../imagens/web.jpg" alt="">
+            <img src="../imagens/ui.jpg" alt="">
+            <img src="../imagens/colegas-trabalhando-juntos-no-projeto_23-2149286161.jpg" alt="">
+        </div>
+        
+        <button class="btn-barras">☰</button>
+        <div class="menu" id="menu">
+            <nav>
+                <a href="perfil.html" target="_blank">Perfil</a>
+                <a href="meuscursos.html">Meus Cursos</a>
+                <a href="mensagens.html">Mensagens</a>
+                <a href="login.html">Sair</a>
+            </nav>
+        </div>
+     </main>
+     <script>
+        const images = document.querySelectorAll('.carousel img');
+        const captions = [
+            'Aqui você encontra os melhores cursos da área de TI',
+            'Oportunidades de Estágio',
+            
+        ];
+        const captionElement = document.querySelector('.caption');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+            captionElement.textContent = captions[currentIndex];
+        }
+
+
+        setInterval(showNextImage, 5000); // Alterna a cada 5 segundos
+        function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+}
+    </script>
+</body>
+<!--
+<footer>
+    <h2 class="msg">Deixe-nos uma Mensagem</h2>
+    <fieldset id="estrutura">
+        
+        <form action="" method="post">
+            
+          
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" required placeholder="Insira aqui o seu nome">
+    
+          
+      
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com"><br> <br>
+    
+          <label for="mensagem"  class="mensagem">Mensagem</label><br>
+          <textarea name="" id="mensagens" cols="50" rows="8"></textarea>
+          
+          <button  class="botaoMensagem" id="botaoMensagem">Enviar</button>
+        </form>
+       </fieldset>
+      
+    <div class="contacts">
+     <h2>Contactos</h2>
+     <h2 class="word">925213959</h2>
+     <h2>Redes Sociais</h2>
+      <section class="imagesR">
+        <img src="../imagens/w-icon.jpg"  class="rs" alt="" width="50px" height="50px"><br><br>
+        <img src="../imagens/facebook.png" alt="" width="50px" height="50px"><br><br>
+        
+         
+      </section>
+      <br><br>
+      <h2>Localização</h2>
+      <h2 class="word">Sapú 2, Casas Azuis,<br> 
+        Rua da Uva, casa nº 13</h2>
+    </div>
+    <p>&copy; 2025 Centro DioPed. Todos os direitos reservados.</p>
+</footer>
+-->
+</html>

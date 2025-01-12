@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva Completa</title>
+    <style>
+        /* Estilo geral */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #000066;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        /* Menu principal (nav) */
+        nav {
+            background-color: #333399;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5555cc;
+        }
+
+        /* Conteúdo principal */
+        main {
+            padding: 20px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 250px;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #000066;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            nav a {
+                padding: 8px;
+                font-size: 0.8rem;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Página Responsiva Completa</h1>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <h2>Bem-vindo à Página Responsiva</h2>
+        <p>Explore os conteúdos abaixo:</p>
+        <div class="content">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagem 1">
+                <h3>Curso de Tecnologia</h3>
+                <p>Aprenda as principais tecnologias do mercado.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagem 2">
+                <h3>Oportunidades de Estágio</h3>
+                <p>Encontre vagas de estágio em diversas áreas.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagem 3">
+                <h3>Consultoria</h3>
+                <p>Receba orientações de profissionais experientes.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <img src="../imagens/colegas-trabalhando-juntos-no-projeto_23-2149286161.jpg" alt="">
+        <p>&copy; 2025 Todos os Direitos Reservados</p>
+    </footer>
+</body>
+</html>
