@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="cabecalho">
-            <div class="logotipo">
+            <div class="logo">
                 <img src="../imagens/Untitled-2.png" alt="">
             </div>
         </div>
@@ -22,38 +22,27 @@
     <!-- Menu -->
     <div class="menu" id="menu">
         <nav>
+            <a href="indexUsuario.html">Página Inicial</a>
             <a href="perfil.html">Perfil</a>
             <a href="meuscursos.html">Meus Cursos</a>
             <a href="mensagens.html">Mensagens</a>
             <a href="login.html">Sair</a>
         </nav>
     </div>
-
     <!-- Container de Perfil -->
     <div class="container" id="containerPerfil">
-        <h2>Nome: ***************</h2>
-        <h2>Email: ***************</h2>
+        <p><strong>Nome:</strong> <span id="perfilNome">Pedro</span></p>
+        <p><strong>Email:</strong> <span id="perfilEmail">Cavudissa</span></p>
         <button type="button" onclick="mostrarFormulario()">Editar Perfil</button>
     </div>
 
     <!-- Formulário de Edição -->
-    <div class="container" id="formularioEdicao" style="display: none;">
-        <h1>Editar Perfil</h1>
-        <form>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Digite o nome" required>
-
-            <label for="apelido">Apelido</label>
-            <input type="text" id="apelido" placeholder="Digite o seu Apelido" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="exemplo@gmail.com" required>
-
-            <label for="bi">Bilhete de Identidade</label>
-            <input type="text" id="bilhete" placeholder="" required>
-
-            <label for="data-nascimento">Data de Nascimento</label>
-            <input type="date" id="dataNascimento" required>
+    <!-- Formulário de Edição -->
+<div class="container" id="formularioEdicao" style="display: none;">
+    <h1>Editar Perfil</h1>
+    <form onsubmit="return salvarDados()">
+        <input type="text" id="inputNome" placeholder="Digite o nome" required>
+        <input type="email" id="inputEmail" placeholder="Digite o email" required>
             
             <div class="button-container">
                 <button type="button" onclick="fecharFormulario()">Cancelar</button>

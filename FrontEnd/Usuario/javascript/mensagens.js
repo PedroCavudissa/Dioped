@@ -1,26 +1,25 @@
- // Simula mensagens vindas de um "servidor"
- const mensagensSimuladas = [
-    { status: 'pendente', texto: 'Pendente: A sua matrícula para o curso de "Biologia" está em análise.' },
-    { status: 'concluido', texto: 'Concluído: A sua matrícula para o curso de "Química" foi confirmada!' },
-];
+// Define as mensagens padrão
+const mensagemPendente = { status: "pendente", texto: 'Pendente: A sua matrícula para o curso de "Programação Web" está em progresso. Após confirmarmos o pagamento, iremos atualizar o estado da matrícula.' };
+const mensagemConcluida = { status: "concluido", texto: 'Concluído: A sua matrícula para o curso de "Programação Web" foi confirmada com sucesso. Bem-vindo(a)!' };
 
-// Função para atualizar mensagens
+// Adiciona evento ao botão "Atualizar"
 document.getElementById("btnAtualizar").addEventListener("click", function () {
     const mensagensContainer = document.getElementById("mensagensContainer");
 
-    // Remove mensagens existentes
-    mensagensContainer.innerHTML = "";
+    // Verifica se a mensagem já foi atualizada para "concluída"
+    if (mensagensContainer.firstChild.className === "concluido") {
+        alert("A mensagem já foi atualizada para 'Concluído'.");
+        return;
+    }
 
-    // Adiciona mensagens simuladas
-    mensagensSimuladas.forEach(msg => {
-        const div = document.createElement("div");
-        div.className = msg.status === "pendente" ? "pendente" : "concluido";
-        div.textContent = msg.texto;
-        mensagensContainer.appendChild(div);
-    });
-
-    alert("Mensagens atualizadas!");
+    // Atualiza a mensagem para "concluída"
+    mensagensContainer.innerHTML = ""; // Limpa as mensagens existentes
+    const div = document.createElement("div");
+    div.className = "concluido";
+    div.textContent = mensagemConcluida.texto;
+    mensagensContainer.appendChild(div);
 });
+
 
 // Função para enviar mensagem
 document.getElementById("btnEnviar").addEventListener("click", function () {

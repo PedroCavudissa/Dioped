@@ -21,6 +21,7 @@
         <br><br><br><br><br><div class="line"></div><br>
         <div class="menu" id="menu">
             <nav>
+                <a href="indexUsuario.html">Página Inicial</a>
                 <a href="perfil.html">Perfil</a>
                 <a href="meuscursos.html">Meus Cursos</a>
                 <a href="mensagens.html">Mensagens</a>
@@ -31,25 +32,21 @@
     <main>
 
    
-    <!-- Menu -->
-    <br>
-    <div id="mensagensContainer">
-        <h2>Mensagens</h2>
-        <!-- Mensagens serão exibidas aqui -->
-        <div class="pendente">
-            Pendente: A sua matrícula para o curso de "Matemática" está em progresso. Após confirmarmos o pagamento, iremos atualizar o estado da matrícula.
-        </div>
-        <div class="concluido">
-            Concluído: A sua matrícula para o curso de "Física" foi confirmada com sucesso. Bem-vindo(a)!
-        </div>
-        <button id="btnAtualizar">Atualizar</button>
-    </div>
-    
-    <h2>Fale Connosco</h2>
-    <div id="faleConnosco">
-        <textarea id="campoMensagem" placeholder="Digite a sua mensagem..."></textarea>
-        <button id="btnEnviar">Enviar</button>
-    </div>
+        <main>
+            <!-- Mensagens -->
+            <br>
+            <div id="mensagensWrapper">
+                <h2>Mensagens</h2>
+                <div id="mensagensContainer">
+                    <div class="pendente">
+                        Pendente: A sua matrícula para o curso de "Progrmação Web" está em progresso. Após confirmarmos o pagamento, iremos atualizar o estado da matrícula.
+                    </div>
+                </div>
+                <button id="btnAtualizar">Atualizar</button>
+            </div><br>
+            <h2>Fale Connosco</h2>
+<input type="text" id="campoMensagem" placeholder="Digite sua mensagem" />
+<button id="btnEnviar">Enviar</button>
 </main>
 
     <script src="../javascript/perfil.js"></script>

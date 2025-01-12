@@ -9,7 +9,7 @@ body {
 }
 .logo {
     position: absolute;
-    left: 20px;
+    left: 25px;
     top: 5px;
     display: flex;
     width: 200px;
@@ -100,4 +100,7 @@ body {
 /* Para que o menu continue visível ao passar o cursor sobre ele */
 .menu:hover {
     display: block;
+}
+.boasVindas{text-align: center;
+display: inline;
 }

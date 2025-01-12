@@ -40,6 +40,8 @@ function confirmar() {
     if (!cursoSelecionado || !periodoSelecionado) {
         alert("Por favor, selecione o curso e o período.");
         return;
+    }else{
+        alert("Formulario Processo Com Sucesso!")
     }
 
     // Atualizar os dados do estudante

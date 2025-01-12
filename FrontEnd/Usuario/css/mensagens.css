@@ -12,6 +12,22 @@ h2 {
     color: #001d6e;
 }
 
+input[type="text"] {
+    width: 90%;
+    height: 90px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #000066;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+input[type="text"]::placeholder
+{
+   
+    font-size: 14px;
+}
+
 #mensagensContainer {
     border: 1px solid #ccc;
     padding: 20px;
@@ -56,6 +72,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 90px;
 }
 
 button:hover {
