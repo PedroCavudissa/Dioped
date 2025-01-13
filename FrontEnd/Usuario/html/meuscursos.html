@@ -32,19 +32,22 @@
     </div>
 
     <div class="container">
+ <!-- Segundo caso: Estudante sem matrícula -->
+ <div id="semMatricula" class="box hidden">
+    <h2>Cursos Inscritos</h2>
+    <p>Ainda não se matriculou em nenhum Curso 😟</p>
+    <button onclick="novaInscricao()">Nova Inscrição</button>
+</div>
+
         <!-- Primeiro caso: Estudante com matrícula -->
         <div id="matriculaConcluida" class="box hidden">
             <h2>Cursos Inscritos</h2>
             <p id="cursoDetalhes"></p>
+          
             <button onclick="novaInscricao()">Nova Inscrição</button>
         </div>
 
-        <!-- Segundo caso: Estudante sem matrícula -->
-        <div id="semMatricula" class="box hidden">
-            <h2>Cursos Inscritos</h2>
-            <p>Ainda não se matriculou em nenhum Curso 😟</p>
-            <button onclick="novaInscricao()">Nova Inscrição</button>
-        </div>
+       
 
         <!-- Formulário de nova inscrição -->
         <div id="formNovaInscricao" class="box hidden">

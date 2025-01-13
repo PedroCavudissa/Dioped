@@ -1,6 +1,6 @@
  // Simulação de dados de matrícula
  let estudante = {
-    matriculado: true,
+    matriculado: false,
     curso: "Programação Web",
     periodo: "Manhã"
 };
@@ -52,6 +52,9 @@ function confirmar() {
     // Atualizar interface
     cancelar();
 }
+
+//novo
+
 
 // Calcular o total a pagar
 function calcularTotal() {
