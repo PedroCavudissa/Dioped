@@ -1,106 +1,69 @@
 main h2{color: black;
-text-align: center;}
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-}
-.logo {
-    position: absolute;
-    left: 25px;
-    top: 5px;
-    display: flex;
-    width: 200px;
-    height: 170px;
-    position: absolute;
-    top: 20px;
-    left: 565px;
-   
-}
-.carousel {
-    position: relative;
-    max-width: 1000px;
-    max-height: 500px;
-    margin: 50px auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.carousel img {
-    width: 100%;
-    display: none;
-}
-.carousel img.active {
-    display: block;
-}
-.caption {
-    margin: 20px 0;
-    font-size: 18px;
-    font-weight: bold;
-}
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-
-.btn-barras {
-    background-color: #000066;
-    color: white;
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: 60px;
-    right: 280px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-/* Estilo para o menu */
-.menu {
-    display: none; /* Menu oculto inicialmente */
-    position: absolute;
-    top: 60px;
-    left: 1190px;
-    background-color: #006;
-    width: 150px;
-    height: 200px;
-    z-index: 1000;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.menu a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-    transition: background-color 0.30s;
-}
-
-.menu a:hover {
-    background-color: #fff;
-    color: #000066; /* Destaque no link ao passar o cursor */
-}
-
-/* Mostrar o menu ao passar o cursor no botão */
-.btn-barras:hover + .menu {
-    display: block;
-}
-
-/* Para que o menu continue visível ao passar o cursor sobre ele */
-.menu:hover {
-    display: block;
-}
-.boasVindas{text-align: center;
-display: inline;
-}
+    text-align: center;}
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .welcome-message{margin: 60px;}
+    .carousel {
+        position: relative;
+        max-width: 1000px;
+        max-height: 500px;
+        margin: 50px auto;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .carousel img {
+        width: 100%;
+        display: none;
+    }
+    .carousel img.active {
+        display: block;
+    }
+    .caption {
+        margin: 20px 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+    }
+    
+    .btn-barras {
+        background-color: #000066;
+        color: white;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 60px;
+        right: 280px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+  
+    
+    /* Mostrar o menu ao passar o cursor no botão */
+    .btn-barras:hover + .menu {
+        display: block;
+    }
+    
+    /* Para que o menu continue visível ao passar o cursor sobre ele */
+    
+    .boasVindas{text-align: center;
+    display: inline;
+    }
+    footer #imagens{border-radius: 15px;}

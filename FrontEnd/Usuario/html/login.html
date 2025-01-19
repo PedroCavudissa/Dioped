@@ -3,51 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
+    <title>Menu Responsivo</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/index.css">
+
 </head>
 <body>
     <header>
-       
         <div class="cabecalho">
-           
-             <ul class="menu">
+            <div class="logo">
+                <img src="../imagens/Untitled-2.png" alt="Logo">
+            </div>
+            <ul class="menu">
                 <li><a href="index.html">Página Inicial</a></li>
-                 <li><a href="index.html">Quem Somos</a></li>
-                 <li><a href="index.html">Cursos</a></li>
-                 <li><a href="index.html">Inscrição</a></li>
-                 <li><a href="index.html">Contactos</a></li>
-             </ul>
-             <div class="logo">
-                 <img src="../imagens/Untitled-2.png" alt="">
-             </div>
-             <div class="language">
-             </div>
-         </div>
-       
-         <br><br><br><br><br><div class="line"></div><br>
-     </header>
+                <li><a href="index.html">Quem Somos</a></li>
+                <li><a href="index.html">Cursos</a></li>
+                <li><a href="index.html">Inscrição</a></li>
+                <li><a href="index.html">Contactos</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="index.html">Página Inicial</a>
+            <a href="index.html">Quem Somos</a>
+            <a href="index.html">Cursos</a>
+            <a href="index.html">Inscrição</a>
+            <a href="index.html">Contactos</a>
+        </div>
+        <div class="line"></div>
+    </header>
     <main>
-       <div class="login">
-        <h1 class="fala">Faça o seu login ou cadastre-se para ter mais recursos</h1>
-        <form action="">
-           
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email"><br><br><br>
-
-            <label for="email">Senha</label><br>
-            <input type="text" name="text" id="login"><br><br><br><br><br><br>
-            
-              <button type="submit" >Entrar</button> 
-        </form>
-        <p class="new"><a href="cadastro.html">Não tens conta? Criar Uma</a></p>
-       <p class="forgoten"> <a href="recuperacao.html">Esquecí a senha</a></p>
-       </div> 
-         <script src="../javascript/login.js"></script>
-
+        <div class="login">
+            <h1 class="fala">Faça o seu login ou cadastre-se para ter mais recursos</h1>
+            <form action="">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"><br><br><br>
+                <label for="senha">Senha</label><br>
+                <input type="password" name="senha" id="senha"><br><br><br><br>
+                <button type="submit">Entrar</button>
+            </form>
+            <p class="new"><a href="cadastro.html">Não tens conta? Criar Uma</a></p>
+            <p class="forgoten"><a href="recuperacao.html">Esqueci a senha</a></p>
+        </div>
     </main>
+    <script src="../javascript/login.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menuMobile = document.getElementById('menu-mobile');
+
+        hamburger.addEventListener('click', () => {
+            menuMobile.classList.toggle('active');
+        });
+    </script>
 </body>
-<footer>
-    
-</footer>
 </html>

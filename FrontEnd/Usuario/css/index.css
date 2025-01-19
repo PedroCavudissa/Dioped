@@ -12,6 +12,8 @@ header {
     position: ;
    
 }
+textarea,input
+{border-radius: 8px;}
 .cabecalho{display: flex;
     margin:0px;
     padding: 0px;}
@@ -101,19 +103,19 @@ main {
     padding: 20px;
 }
 
-.welcome {
-    text-align: center;
-    margin-bottom: 20px;
+.welcome p {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adiciona sombra */
+    z-index: 1000;
 }
-.welcome p{position: absolute;
-top: 500px;
-left: 30px;
-font-size: 40px;
-color: #fff;}
-body  {
-    display: block;
-    width: 100%;
-}
+
+.welcome h1{text-align: center;}
+
 
 .sobreposicao {
     position: absolute;
@@ -121,7 +123,7 @@ body  {
     left: 20px;
     right: 0px;
     bottom: 28px;
-    background-color: #006; /* Cor vermelha com transparência */
+    background-color: #006; /* Cor com transparência */
     opacity: 45%;
 }
 

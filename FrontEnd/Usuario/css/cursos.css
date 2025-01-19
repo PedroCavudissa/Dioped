@@ -116,6 +116,10 @@ table {
     font-size: 18px;
     text-align: left;
 }
+table a{
+   color: rgb(53, 4, 251);
+   text-decoration: underline;
+}
 th, td {
     padding: 12px;
     border: 1px solid #ddd;
