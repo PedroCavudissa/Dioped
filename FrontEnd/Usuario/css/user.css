@@ -67,3 +67,19 @@ main h2{color: black;
     display: inline;
     }
     footer #imagens{border-radius: 15px;}
+
+    @media (max-width: 768px) {
+        .carousel {
+            max-width: 100%;
+            max-height: auto;
+        }
+        .btn-barras {
+            top: 20px;
+            right: 20px;
+        }
+        main {
+            padding: 20px;
+            height: auto; /* Evita valores fixos */
+        }
+    }
+    
